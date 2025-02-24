@@ -2,11 +2,8 @@
   <div class="mx-auto max-w-md overflow-hidden rounded-xl bg-white shadow-md md:max-w-2xl">
     <div class="md:flex">
       <div class="md:shrink-0">
-        <!-- <img
-        class="h-48 w-full object-cover md:h-full md:w-48"
-        src="/img/building.jpg"
-        alt="Modern building architecture"
-      /> -->
+        <img class="h-48 w-full object-cover md:h-full md:w-48" src="/src/assets/images/watcher.jpg"
+          alt="Modern building architecture" />
       </div>
       <div class="p-8">
         <div class="text-sm font-semibold tracking-wide text-indigo-500 uppercase">Company retreats</div>
