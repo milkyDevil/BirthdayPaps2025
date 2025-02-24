@@ -1,0 +1,53 @@
+# Logs
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+lerna-debug.log*
+
+# Node Modules & Dependencies
+node_modules/
+dist/
+dist-ssr/
+.vite/
+.cache/
+.husky/
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# TypeScript Build Info
+*.tsbuildinfo
+
+# Cypress Test Files
+/cypress/videos/
+/cypress/screenshots/
+/cypress/downloads/
+
+# Editor & OS-Specific Files
+.vscode/
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Tailwind Cache
+.tailwind/
+
+# ESLint & Linter Cache
+.eslintcache
+
+# Turbo Repo
+turbo/
+
+# Lock Files (Optional - Keep or Remove)
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
