@@ -1,5 +1,8 @@
-@import 'tailwindcss/preflight';
-@import 'tailwindcss/utilities'; /* This is necessary for utilities like px-4 */
+@import 'tailwindcss';
+
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+@variant dark (&:where(.dark, .dark *));
 
 :root {
   --color-bg: #ffffff;
