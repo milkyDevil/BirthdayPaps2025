@@ -29,7 +29,7 @@ function startJourney() {
     </div>
   </div>
   <div class="mx-auto max-w-md overflow-hidden rounded-xl bg-white dark:bg-gray-900 shadow-md md:max-w-2xl mt-4">
-    <img class="h-48 w-full object-cover md:h-full md:w-48" src="/src/assets/images/pappuexploring.jpg"
+    <img class="h-48 w-full object-cover md:h-full" src="/src/assets/images/pappuexploring.jpg"
       alt="Modern building architecture" />
 
   </div>

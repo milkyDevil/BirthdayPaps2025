@@ -15,6 +15,11 @@ const router = createRouter({
       component: () => import('../views/TesseractView.vue'),
     },
     {
+      path: '/loki',
+      name: 'LokiTimeline',
+      component: () => import('../views/LokiTimelineView.vue'),
+    },
+    {
       path: '/deadpool',
       name: 'DeadpoolTimeline',
       // route level code-splitting
