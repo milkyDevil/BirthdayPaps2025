@@ -15,14 +15,16 @@ const emit = defineEmits<{
 
 <template>
     <div
-        class="mx-auto max-w-md overflow-hidden rounded-xl bg-white dark:bg-gray-900 shadow-md md:max-w-2xl text-center">
+        class="mx-auto max-w-md min-h-screen overflow-hidden rounded-xl bg-white dark:bg-gray-900 shadow-md shadow-teal-500/50 dark:shadow-purple-500/50  md:max-w-2xl text-center">
         <img :src="imageSrc" alt="Deadpool" class="w-full rounded-t-xl" />
-        <p class="text-lg font-semibold text-gray-900 dark:text-gray-100 mt-4">
+        <p class="text-lg font-semibold text-purple-600 dark:text-teal-600 mt-4 px-2">
             {{ introText }}
         </p>
-        <button @click="emit('startQuiz')"
-            class="mt-6 px-6 py-2 bg-red-600 text-white font-bold rounded-lg hover:bg-red-700 transition">
-            Next →
-        </button>
+        <div class="flex justify-center m-5">
+            <button @click="emit('startQuiz')"
+                class="p-2 rounded-lg bg-transparent border border-dashed border-teal-500 dark:border-purple-500 text-purple-600 dark:text-teal-600 transition">
+                Next →
+            </button>
+        </div>
     </div>
 </template>

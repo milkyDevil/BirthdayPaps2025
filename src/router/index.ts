@@ -20,6 +20,11 @@ const router = createRouter({
       component: () => import('../views/LokiTimelineView.vue'),
     },
     {
+      path: '/happybirthday',
+      name: 'HappyBirthDay',
+      component: () => import('../views/HappyBirthday.vue'),
+    },
+    {
       path: '/deadpool',
       name: 'DeadpoolTimeline',
       // route level code-splitting

@@ -1,5 +1,5 @@
 export const deadpoolDialogue = {
-  meet: "Oh hey, fresh meat! You look like you just got lost in a multiversal fanfic—don't worry, happens to the best of us. So, long story short: Scarlet Witch hit me with a ‘talkative idiot’ curse (rude, right?), and Iron Man—because he totally owes her one—took time from his billionaire spa days to whip up this quiz. Now, I could totally ace it myself... but, uh, let’s just say my brain is more ‘chimichanga storage’ than ‘physics vault.’ So congrats, Pappu! You’re my nerdy lifeline! Get all three right, and boom—curse gone, Deadpool free, and you? Well, you get the honor of knowing you saved the most handsome mercenary in the multiverse. No pressure!",
+  meet: "Oh hey, fresh meat! You look like you just got lost in a multiversal fanfic—don't worry, happens to the best of us. So, long story short: Scarlet Witch hit me with a ‘talkative idiot’ curse (rude, right?), and Iron Man—because he totally owes her one—took time from his billionaire spa days to whip up this quiz. Now, I could totally ace it myself... but, uh, let’s just say my brain is more ‘chimichanga storage’ than ‘physics vault.’ So congrats, Pappu! You’re my nerdy lifeline! Get all five right, and boom—curse gone, Deadpool free, and you? Well, you get the honor of knowing you saved the most handsome mercenary in the multiverse. No pressure!",
   meetSrc: '/src/assets/images/watcher.jpg',
 
   goodbye:
@@ -80,6 +80,56 @@ export const questions = [
         correct: true,
         response:
           'Damn, Einstein! You sure you’re not a variant of Tony Stark? That was some genius-level stuff. You just stuck that answer together stronger than a proton in a neutron’s warm embrace! You, my friend, have officially earned a gold star in Quantum Glue-ology. If I had a gluon for every right answer you gave, I could hold my life together… but hey, let’s not ask for miracles!',
+      },
+    ],
+  },
+  {
+    id: 4,
+    question:
+      "Alright, listen up, Tiny Tornado. Let’s say you start flapping your arms like a lunatic—no reason, just because you're you. Fast forward a month, and bam! A hurricane shows up in the Pacific. Coincidence, or did you just break physics?",
+    options: [
+      {
+        text: 'My flapping caused the hurricane. Time to take responsibility.',
+        correct: false,
+        response:
+          'Oh wow, look at you, Butterfly Boy! Next, you’ll tell me every time you sneeze, someone in Wakanda loses Wi-Fi.',
+      },
+      {
+        text: 'The hurricane was inevitable—flapping or not.',
+        correct: true,
+        response:
+          'Ding-ding-ding! We have a winner! Science prevails! And guess what? You now have my respect… for the next five seconds. Use them wisely.',
+      },
+      {
+        text: 'This is all Loki’s fault somehow.',
+        correct: false,
+        response:
+          'Blaming Loki? That’s so last season. Might as well blame Doctor Strange’s cape while you’re at it.',
+      },
+    ],
+  },
+  {
+    id: 5,
+    question:
+      'Alright, science nerd, let’s say you’re strutting through a party full of physicists, feeling all smug. Suddenly—bam!—the Higgs field disappears. Do you:',
+    options: [
+      {
+        text: 'Keep your mass, but now Einstein owes you an explanation (and probably a drink).',
+        correct: true,
+        response:
+          'Ding-ding! Science wins! And congrats, you just joined the exclusive club of ‘People Who Understand Mass’—membership: you and literally no one at a flat Earth convention.',
+      },
+      {
+        text: 'Float away like a massless photon, gracefully ignoring gravity.',
+        correct: false,
+        response:
+          'Look at you, cosmic dandelion! Just don’t let Thor see you floating—he might mistake you for Mjolnir’s long-lost twin.',
+      },
+      {
+        text: 'Collapse into a quantum mess of pure energy—so, Monday.',
+        correct: false,
+        response:
+          'Ah yes, spontaneous energy conversion! Also known as ‘me after three chimichangas and a questionable life decision.’',
       },
     ],
   },

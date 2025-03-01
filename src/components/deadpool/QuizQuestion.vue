@@ -37,15 +37,16 @@ watch(() => props.question, () => {
 </script>
 
 <template>
-    <p class="text-lg font-semibold text-gray-900 dark:text-gray-100">
+    <p class="text-lg font-semibold text-purple-600 dark:text-teal-600 px-2">
         {{ question.question }}
     </p>
-    <div class="mt-4 space-y-2">
+
+    <div class="my-4 space-y-2 mx-2">
         <label v-for="(option, index) in question.options" :key="index"
-            class="flex items-center space-x-3 p-3 border rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800">
+            class="flex items-center space-x-3 p-3 border border-teal-400 dark:border-purple-400 rounded-lg cursor-pointer transition">
             <input type="radio" :value="option.text" v-model="selectedOption" class="hidden"
                 @change="selectAnswer(option)" />
-            <span class="text-gray-900 dark:text-gray-100">{{ option.text }}</span>
+            <span class="text-purple-600 dark:text-teal-600">{{ option.text }}</span>
         </label>
     </div>
 </template>

@@ -15,24 +15,36 @@ const handleClick = () => {
                 alt="Modern building architecture" />
         </div>
     </div>
+
 </template>
 
 <style scoped>
-@keyframes continuous-glow {
+@keyframes alternating-glow {
     0% {
-        box-shadow: 0 0 5px 2px rgba(128, 0, 128, 0.5);
+        box-shadow: 0 0 5px 2px rgba(168, 85, 247, 0.5);
+        /* Purple */
+    }
+
+    25% {
+        box-shadow: 0 0 20px 10px rgba(168, 85, 247, 0.7);
     }
 
     50% {
-        box-shadow: 0 0 20px 10px rgba(128, 0, 128, 0.7);
+        box-shadow: 0 0 5px 2px rgba(20, 184, 166, 0.5);
+        /* Teal */
+    }
+
+    75% {
+        box-shadow: 0 0 20px 10px rgba(20, 184, 166, 0.7);
     }
 
     100% {
-        box-shadow: 0 0 5px 2px rgba(128, 0, 128, 0.5);
+        box-shadow: 0 0 5px 2px rgba(168, 85, 247, 0.5);
+        /* Back to Purple */
     }
 }
 
 .glow-effect {
-    animation: continuous-glow 2s infinite ease-in-out;
+    animation: alternating-glow 3s infinite ease-in-out;
 }
 </style>
