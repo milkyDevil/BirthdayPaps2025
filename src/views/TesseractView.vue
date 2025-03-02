@@ -11,7 +11,7 @@ const handleClick = () => {
     <div
         class="flex justify-center items-center mx-auto max-w-md min-h-screen rounded-xl bg-white dark:bg-gray-900 md:max-w-2xl">
         <div class="relative overflow-hidden rounded-xl shadow-md cursor-pointer glow-effect" @click="handleClick">
-            <img class="h-48 w-48 object-cover rounded-xl" src="/src/assets/images/tesseract.png"
+            <img class="h-48 w-48 object-cover rounded-xl" src="/images/tesseract.png"
                 alt="Modern building architecture" />
         </div>
     </div>

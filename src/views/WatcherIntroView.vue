@@ -12,7 +12,7 @@ function startJourney() {
     class="mx-auto max-w-md overflow-hidden rounded-xl bg-white dark:bg-gray-900 shadow-md shadow-teal-500/50 dark:shadow-purple-500/50 md:max-w-2xl">
     <div class="md:flex">
       <div class="md:shrink-0">
-        <img class="h-48 w-full object-cover md:h-full md:w-48" src="/src/assets/images/watcher.jpg"
+        <img class="h-48 w-full object-cover md:h-full md:w-48" src="/images/watcher.jpg"
           alt="Modern building architecture" />
       </div>
       <div class="p-8">
@@ -31,7 +31,7 @@ function startJourney() {
   </div>
   <div
     class="mx-auto max-w-md overflow-hidden rounded-xl bg-white dark:bg-gray-900 shadow-md shadow-teal-500/50 dark:shadow-purple-500/50 md:max-w-2xl mt-4">
-    <img class="h-48 w-full object-cover md:h-full" src="/src/assets/images/pappuexploring.jpg"
+    <img class="h-48 w-full object-cover md:h-full" src="/images/pappuexploring.jpg"
       alt="Modern building architecture" />
     <div class="flex justify-center m-5">
       <button @click="startJourney"
