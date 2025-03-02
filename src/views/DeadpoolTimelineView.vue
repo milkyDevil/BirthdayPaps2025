@@ -68,6 +68,13 @@ const handleNext = () => {
     </div>
     <DeadpoolOutro v-else @next="handleNext" :imageSrc="deadpoolDialogue.goodbyeSrc"
       :introText="deadpoolDialogue.goodbye" />
+    <router-link to="/tesseract" class="fixed bottom-4 left-4 text-gray-400 hover:text-white transition text-2xl">
+      ⬅️
+    </router-link>
+
+    <router-link to="/loki" class="fixed bottom-4 right-4 text-gray-400 hover:text-white transition text-2xl">
+      ➡️
+    </router-link>
 
     <Teleport to="body">
       <FeedbackModal v-if="showModal" :message="feedbackText" :imageSrc="feedbackImage" @close="closeModal" />

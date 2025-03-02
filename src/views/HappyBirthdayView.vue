@@ -59,12 +59,16 @@ const afterLeaveStep1 = () => {
         </transition>
 
         <!-- Home Icon (Fades in with Smooth Appearance) -->
-        <transition name="fade">
-            <router-link v-if="step === 3" to="/"
-                class="fixed bottom-4 right-4 text-gray-400 hover:text-white transition">
-                🏠
-            </router-link>
-        </transition>
+        <!-- <transition name="fade"> -->
+        <router-link to="/loki" class="fixed bottom-4 left-4 text-gray-400 hover:text-white transition text-2xl">
+            ⬅️
+        </router-link>
+
+        <router-link to="/" class="fixed bottom-4 right-4 text-gray-400 hover:text-white transition text-2xl">
+            ➡️
+        </router-link>
+
+        <!-- </transition> -->
 
     </div>
 </template>

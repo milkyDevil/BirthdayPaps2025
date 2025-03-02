@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/WatcherIntroView.vue'
+import HappyBirthdayView from '@/views/HappyBirthdayView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -22,7 +23,7 @@ const router = createRouter({
     {
       path: '/happybirthday',
       name: 'HappyBirthDay',
-      component: () => import('../views/HappyBirthdayView.vue'),
+      component: HappyBirthdayView,
     },
     {
       path: '/deadpool',

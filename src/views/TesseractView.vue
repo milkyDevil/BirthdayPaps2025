@@ -15,7 +15,13 @@ const handleClick = () => {
                 alt="Modern building architecture" />
         </div>
     </div>
+    <router-link to="/" class="fixed bottom-4 left-4 text-gray-400 hover:text-white transition text-2xl">
+        ⬅️
+    </router-link>
 
+    <router-link to="/deadpool" class="fixed bottom-4 right-4 text-gray-400 hover:text-white transition text-2xl">
+        ➡️
+    </router-link>
 </template>
 
 <style scoped>

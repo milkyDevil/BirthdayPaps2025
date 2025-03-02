@@ -40,4 +40,12 @@ function startJourney() {
       </button>
     </div>
   </div>
+  <router-link to="/happybirthday" class="fixed bottom-4 left-4 text-gray-400 hover:text-white transition text-2xl">
+    ⬅️
+  </router-link>
+
+  <router-link to="/tesseract" class="fixed bottom-4 right-4 text-gray-400 hover:text-white transition text-2xl">
+    ➡️
+  </router-link>
+
 </template>
