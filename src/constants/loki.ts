@@ -1,29 +1,29 @@
 export const lokiDialogue = {
   meet: 'Ah, a visitor! And here I thought my timeline was finally getting some peace. Tell me, have you read *Physics for Gods: How to Manage a Timeline Without Destroying It*? I’ve been brushing up on physics—yes, me, the God of Mischief, now burdened with actual responsibility. It’s tragic, really. I recently met a certain Dr. Hank Pym from another universe. Quite the genius—if a bit insufferable. He had the audacity to claim he answered *all* my questions correctly. Now, I wonder... can *you* pass my test, or will you crumble under the weight of my superior intellect? ',
-  meetSrc: '/src/assets/images/loki8.jpg',
-  meetQuestionSrc: '/src/assets/images/loki_meet.jpg',
+  meetSrc: '/images/loki8.jpg',
+  meetQuestionSrc: '/images/loki_meet.jpg',
   quizPrompt: `So, are you ready for a quiz? Or shall I add "avoiding challenges" to your list of talents?`,
   quizResponses: {
     YES: `Ah, finally! Someone with a modicum of courage. This will be amusing. Try not to embarrass yourself too quickly.`,
     NO: `Oh? A coward? How *disappointing*. But alas, you *will* take the quiz anyway. Consider it an honor—I don’t test just anyone.`,
   },
-  quizResponsesSrc: '/src/assets/images/loki9.jpg',
+  quizResponsesSrc: '/images/loki9.jpg',
   finalWords:
     'Well, well, look at you. Surviving my quiz with *some* dignity intact. Usually, it takes people ten entire timelines to even *approach* their original reality… But as you *should* know by now, everything runs through *me* these days. So, instead of making you jump through cosmic hoops, I’ll be *generous* and send you straight back to your timeline. No need to thank me—just a small favor from the God of Mischief.',
-  finalWordsSrc: '/src/assets/images/loki_meet2.jpg',
+  finalWordsSrc: '/images/loki_meet2.jpg',
   ageQuestion:
     'Oh, and before you go—I hear you’re turning **34** this year… but deep down, you feel **24**. Now, here’s a question: Should I send you back to when you *were* 24?',
   ageResponses: {
     YES: 'Oh, how *tempting*! But unfortunately, I can’t go around breaking timelines for *birthday gifts*—even I have limits… occasionally.',
     NO: 'Ah, wise choice. If I *did* send you back, you’d have to relive all those *questionable* fashion choices. Trust me, you’re better off.',
   },
-  ageResponsesSrc: '/src/assets/images/loki5.jpg',
+  ageResponsesSrc: '/images/loki5.jpg',
   finalFarewell:
     'Happy Birthday! Yes, you *are* 34—I can’t mess with the timeline *this* time… but perhaps another day. However, I *will* grant you this—you’ll **act** 24, **look** 24, and, with any luck, **feel** 24. That’s about as much magic as I’m willing to spend today. Now go, mortal. Enjoy your celebration, and try not to cause *too* much mischief in my absence.',
-  goodbyeSrc: '/src/assets/images/loki3.jpg',
-  correctans_img: '/src/assets/images/loki11.jpg',
-  wrongans_img: '/src/assets/images/loki4.jpg',
-  quiz_img: '/src/assets/images/loki_quiz.jpg',
+  goodbyeSrc: '/images/loki3.jpg',
+  correctans_img: '/images/loki11.jpg',
+  wrongans_img: '/images/loki4.jpg',
+  quiz_img: '/images/loki_quiz.jpg',
 }
 
 export const questions = [
