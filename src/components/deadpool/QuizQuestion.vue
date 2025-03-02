@@ -13,7 +13,7 @@ interface Question {
     options: Option[];
 }
 
-const props = defineProps<{ question: Question }>();
+const props = defineProps<{ question: Question, imageQuizSrc: string, correctAnsSrc: string, wrongAnsSrc: string }>();
 const emit = defineEmits<{
     (e: "answer", feedback: { text: string; image: string }, correct: boolean): void;
 }>();
@@ -24,8 +24,8 @@ const selectAnswer = (option: Option) => {
     selectedOption.value = option.text; // Store selected option
 
     const feedbackImage = option.correct
-        ? "/src/assets/images/watcher.jpg"
-        : "/src/assets/images/watcher.jpg";
+        ? props.correctAnsSrc
+        : props.wrongAnsSrc;
 
     emit("answer", { text: option.response, image: feedbackImage }, option.correct);
 };
@@ -37,6 +37,7 @@ watch(() => props.question, () => {
 </script>
 
 <template>
+    <img :src="imageQuizSrc" alt="Deadpool" class="w-full rounded-t-xl" />
     <p class="text-lg font-semibold text-purple-600 dark:text-teal-600 px-2">
         {{ question.question }}
     </p>

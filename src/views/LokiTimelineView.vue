@@ -78,7 +78,7 @@ const handleNextPage = () => {
       class="mx-auto max-w-md min-h-screen rounded-xl bg-white dark:bg-gray-900 shadow-md shadow-teal-500/50 dark:shadow-purple-500/50 md:max-w-2xl"
       v-else-if="step === 'introQuery'">
       <LokiIntroQuery :imageSrc="lokiDialogue.meetQuestionSrc" :ques="lokiDialogue.quizPrompt"
-        :res="lokiDialogue.quizResponses" @start-quiz="handleIntroResponse" />
+        :res="lokiDialogue.quizResponses" @start-quiz="handleIntroResponse" :resSrc="lokiDialogue.quizResponsesSrc" />
       <button
         class="mt-4 px-4 py-2 bg-transparent border border-dashed border-teal-500 dark:border-purple-500 text-purple-600 dark:text-teal-600 rounded-lg mx-2"
         @click="handleStartQuiz">
@@ -88,7 +88,9 @@ const handleNextPage = () => {
     <div
       class="mx-auto max-w-md min-h-screen rounded-xl bg-white dark:bg-gray-900 shadow-md shadow-teal-500/50 dark:shadow-purple-500/50  md:max-w-2xl"
       v-else-if="step === 'quiz'">
-      <QuizQuestion :question="questions[currentQuestionIndex]" @answer="handleAnswer" />
+      <QuizQuestion :question="questions[currentQuestionIndex]" @answer="handleAnswer"
+        :imageQuizSrc="lokiDialogue.quiz_img" :correctAnsSrc="lokiDialogue.correctans_img"
+        :wrongAnsSrc="lokiDialogue.wrongans_img" />
 
       <button v-if="isCorrect"
         class="mt-4 px-4 py-2 bg-transparent border border-dashed border-teal-500 dark:border-purple-500 text-purple-600 dark:text-teal-600 rounded-lg mx-2"
@@ -102,7 +104,7 @@ const handleNextPage = () => {
       class="mx-auto max-w-md min-h-screen rounded-xl bg-white dark:bg-gray-900 shadow-md shadow-teal-500/50 dark:shadow-purple-500/50 md:max-w-2xl"
       v-else-if="step === 'ageQuery'">
       <LokiIntroQuery :imageSrc="lokiDialogue.finalWordsSrc" :ques="lokiDialogue.ageQuestion"
-        :res="lokiDialogue.ageResponses" @start-quiz="handleIntroResponse" />
+        :res="lokiDialogue.ageResponses" @start-quiz="handleIntroResponse" :resSrc="lokiDialogue.ageResponsesSrc" />
       <button
         class="mt-4 px-4 py-2 bg-transparent border border-dashed border-teal-500 dark:border-purple-500 text-purple-600 dark:text-teal-600 rounded-lg mx-2"
         @click="handleNextFinal">

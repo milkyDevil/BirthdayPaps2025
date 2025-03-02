@@ -1,10 +1,13 @@
 export const deadpoolDialogue = {
   meet: "Oh hey, fresh meat! You look like you just got lost in a multiversal fanfic—don't worry, happens to the best of us. So, long story short: Scarlet Witch hit me with a ‘talkative idiot’ curse (rude, right?), and Iron Man—because he totally owes her one—took time from his billionaire spa days to whip up this quiz. Now, I could totally ace it myself... but, uh, let’s just say my brain is more ‘chimichanga storage’ than ‘physics vault.’ So congrats, Pappu! You’re my nerdy lifeline! Get all five right, and boom—curse gone, Deadpool free, and you? Well, you get the honor of knowing you saved the most handsome mercenary in the multiverse. No pressure!",
-  meetSrc: '/src/assets/images/watcher.jpg',
+  meetSrc: '/src/assets/images/deadpoolmeet2.jpg',
 
   goodbye:
     'Alright, Pappu, I officially owe you one—don’t let it go to your head! Now, heads up: your next stop is Loki’s timeline, and trust me, that guy lies more than a politician at a campaign rally. If he offers you a deal, a trinket, or—even worse—a ‘friendly’ hug, just run. Oh, and one more thing… Doctor Strange saw 14,000,605 futures, but guess what? None of them had me actually saying this—Happy Birthday, Pappu! Consider it a multiversal exclusive! Now go, before I get all emotional and ruin my bad-boy image!',
-  goodbyeSrc: '/src/assets/images/watcher.jpg',
+  goodbyeSrc: '/src/assets/images/deadpool_heart.jpg',
+  correctans_img: '/src/assets/images/deadpoolpraise.jpg',
+  wrongans_img: '/src/assets/images/deadpoolhumor.jpg',
+  quiz_img: '/src/assets/images/deadpool_read.jpg',
 }
 
 export const questions = [

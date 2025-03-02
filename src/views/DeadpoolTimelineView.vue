@@ -56,7 +56,9 @@ const handleNext = () => {
     <div
       class="mx-auto max-w-md min-h-screen rounded-xl bg-white dark:bg-gray-900 shadow-md shadow-teal-500/50 dark:shadow-purple-500/50  md:max-w-2xl"
       v-else-if="step === 'quiz'">
-      <QuizQuestion :question="questions[currentQuestionIndex]" @answer="handleAnswer" />
+      <QuizQuestion :question="questions[currentQuestionIndex]" :imageQuizSrc="deadpoolDialogue.quiz_img"
+        @answer="handleAnswer" :correctAnsSrc="deadpoolDialogue.correctans_img"
+        :wrongAnsSrc="deadpoolDialogue.wrongans_img" />
 
       <button v-if="isCorrect"
         class="mt-4 px-4 py-2 bg-transparent border border-dashed border-teal-500 dark:border-purple-500 text-purple-600 dark:text-teal-600 rounded-lg mx-2"

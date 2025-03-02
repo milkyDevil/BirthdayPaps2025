@@ -2,10 +2,11 @@
 import { defineProps, defineEmits } from "vue";
 
 // Props
-defineProps<{
+const props = defineProps<{
     imageSrc: string;
     ques: string;
     res: any;
+    resSrc: string
 }>();
 
 // Emits
@@ -14,7 +15,7 @@ const emit = defineEmits<{
 }>();
 
 const selectAnswer = (value: string) => {
-    const feedbackImage = "/src/assets/images/watcher.jpg";
+    const feedbackImage = props.resSrc;
 
     emit("start-quiz", { text: value, image: feedbackImage });
 };
