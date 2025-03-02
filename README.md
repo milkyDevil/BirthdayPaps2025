@@ -37,3 +37,7 @@ pnpm build
 ```sh
 pnpm lint
 ```
+
+### Link to test
+
+Vercel - https://birthday-paps2025.vercel.app/
