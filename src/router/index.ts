@@ -22,7 +22,7 @@ const router = createRouter({
     {
       path: '/happybirthday',
       name: 'HappyBirthDay',
-      component: () => import('../views/HappyBirthday.vue'),
+      component: () => import('../views/HappyBirthdayView.vue'),
     },
     {
       path: '/deadpool',
