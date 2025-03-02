@@ -21,14 +21,16 @@ const afterLeaveStep1 = () => {
 
         <!-- Step 1: Initial Message (Fades Out) -->
         <transition name="fade" @after-leave="afterLeaveStep1">
-            <div v-if="step === 1" class="text-center">
+            <div v-if="step === 1" class="text-center overflow-hidden">
+                <img src="/images/together.jpg" alt="Deadpool" class="w-full rounded-t-xl" />
                 <p class="text-xl text-center mb-4 text-purple-600 dark:text-teal-600">
-                    “You’ve mastered time, space, and mischief… I knew you could do it, so I accepted the challenge from
+                    “Finally you are back. You’ve mastered time, space, and mischief… I knew you could do it, so I
+                    accepted the challenge from
                     Thanos. But your greatest reward is right here—me.”
                 </p>
                 <!-- Clickable Heart (Blinks until Clicked) -->
                 <button @click="handleHeart"
-                    class="mt-6 text-4xl transition-transform transform hover:scale-125 animate-pulse">
+                    class="my-6 text-4xl transition-transform transform hover:scale-125 animate-custom-pulse">
                     ❤️
                 </button>
             </div>
@@ -43,7 +45,7 @@ const afterLeaveStep1 = () => {
 
                 <!-- Clickable Heart (Blinks until Clicked) -->
                 <button @click="handleHeartClick" class="mt-6 text-4xl transition-transform transform hover:scale-125"
-                    :class="{ 'animate-pulse': step === 2 }">
+                    :class="{ 'animate-custom-pulse': step === 2 }">
                     {{ step === 3 ? '💜' : '❤️' }}
                 </button>
             </div>
@@ -94,5 +96,24 @@ const afterLeaveStep1 = () => {
         opacity: 1;
         transform: scale(1);
     }
+}
+
+/* Custom Heart Pulse Animation */
+@keyframes custom-pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animate-custom-pulse {
+    animation: custom-pulse 1.5s infinite ease-in-out;
 }
 </style>
